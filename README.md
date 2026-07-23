@@ -5,7 +5,7 @@ Welcome to my personal portfolio repository! This is a modern, fully responsive,
 ---
 
 ## 🚀 Live Demo
-You can view the live website here: https://sanawebdeveloper098-dev.github.io/personal-portfolio/
+You can view the live website here:https://sanawebdeveloper098-dev.github.io/portfolio/
 
 ---
 
