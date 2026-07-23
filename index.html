@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sana Arshad — AI-First Web Developer</title>
+    <meta name="description" content="Portfolio of Sana Arshad, an AI-First Powered Web Developer building beautiful, responsive, and accessible web experiences.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Sticky Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">Sana<span class="gradient-text">.dev</span></a>
+            <nav class="nav-links" id="navLinks">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#resume" class="nav-link">Resume</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#achievements" class="nav-link">Achievements</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                </button>
+                <div class="hamburger" id="hamburger" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-bg">
+            <div class="glow-blob blob-1"></div>
+            <div class="glow-blob blob-2"></div>
+        </div>
+        <div class="hero-content container">
+            <div class="hero-text fade-in-up">
+                <span class="badge">Welcome to my portfolio</span>
+                <h1>Hi, I'm <span class="gradient-text">Sana Arshad</span></h1>
+                <h2><span id="typedText" class="typed-text"></span><span class="cursor">|</span></h2>
+                <p>I build beautiful, responsive, accessible, and AI-powered web experiences using modern frontend technologies. Passionate about creating clean UI, smooth user experiences, and practical web applications that bridge design and intelligence. By blending modern frontend tools with AI-driven solutions, I turn ideas into engaging and high-performing digital realities</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary ripple">View Projects</a>
+                    <a href="sana-arshad-resume.jpg" class="btn btn-outline ripple" id="downloadResumeBtn" download="sana-arshad-resume.jpg">Download Resume</a>
+                </div>
+                <div class="hero-socials">
+                    <a href="https://github.com/sanawebdeveloper098-dev" target="_blank" rel="noopener" aria-label="GitHub">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/sana-muhammad-arshad-19b357411" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </a>
+                  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sanawebdeveloper098@gmail.com" target="_blank" rel="noopener" aria-label="Email">
+    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+</a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper zoom-in">
+                <div class="circle-glow-container">
+                    <div class="rotating-gradient-border"></div>
+                    <div class="profile-circle-inner">
+                        <img src="profile-image.jpeg" alt="Sana Arshad Profile Photo" class="profile-img" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="section-header slide-up">
+                <span class="badge">DISCOVER ME</span>
+                <h2>Journey & Background in <span class="gradient-text">Tech</span></h2>
+                <p class="about-main-desc">
+                     I'm, an enthusiastic Frontend Web Developer who loves combining creative design principles with intelligent AI tools to build smooth and accessible digital experiences.
+                </p>
+            </div>
+
+            <!-- 3 Bento Cards Grid -->
+            <div class="about-bento-grid">
+                <div class="bento-card gradient-border-card slide-left">
+                    <div class="bento-icon">💡</div>
+                    <h3>My Mission</h3>
+                    <p>Focusing on transforming ordinary frontend concepts into immersive web applications by prioritizing clean aesthetics and seamless user navigation.</p>
+                </div>
+
+                <div class="bento-card gradient-border-card slide-up">
+                    <div class="bento-icon">🛠️</div>
+                    <h3>Execution Style</h3>
+                    <p>Writing organized vanilla JavaScript and structured styling, ensuring every page loads fast and maintains peak performance across all screen sizes.</p>
+                </div>
+
+                <div class="bento-card gradient-border-card slide-right">
+                    <div class="bento-icon">🎯</div>
+                    <h3>Current Focus</h3>
+                    <p>Expanding my technical horizons in modern full-stack development, adopting AI-assisted solutions, and engineering practical projects from scratch.</p>
+                </div>
+            </div>
+
+            <!-- Skills Grid (Without Box) -->
+            <div class="skills-container slide-up">
+                <h1>Core Stack & <span class="gradient-text">Tools</span></h1>
+                <div class="skills-grid">
+                    <span class="skill-badge">HTML5</span>
+                    <span class="skill-badge">CSS3</span>
+                    <span class="skill-badge">JavaScript</span>
+                    <span class="skill-badge">Git</span>
+                    <span class="skill-badge">GitHub</span>
+                    <span class="skill-badge">REST APIs</span>
+                    <span class="skill-badge">Supabase</span>
+                    <span class="skill-badge">Bootstrap</span>
+                    <span class="skill-badge">Responsive Design</span>
+                    <span class="skill-badge">AI Tools</span>
+                    <span class="skill-badge">VS Code</span>
+                </div>
+            </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="section resume-section">
+    <div class="container">
+        <div class="section-header slide-up">
+            <span class="badge">Professional Pathway</span>
+            <h2>My <span class="gradient-text">Education</span></h2>
+        </div>
+        <div class="timeline-container">
+            <div class="timeline-column slide-left">
+                <div class="timeline">
+                    <!-- Box 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">June 2024</span>
+                            <h4>Bachelor of Science in Statistics</h4>
+                            <h5>University of the Punjab</h5>
+                            <p>Built a robust foundation in analytical reasoning, quantitative modeling, and data interpretation.</p>
+                        </div>
+                    </div>
+                    <!-- Box 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Present</span>
+                            <h4>Full Stack Web Development</h4>
+                            <h5>Continuous Learning</h5>
+                            <p>Mastering advanced client-server architectures, database configuration, and dynamic user interfaces.</p>
+                        </div>
+                    </div>
+                    <!-- Box 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Present</span>
+                            <h4>AI-First Web Development</h4>
+                            <h5>Specialized Track</h5>
+                            <p>Integrating artificial intelligence primitives directly into daily coding workflows and software deployment pipelines.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="experience" class="section experience-section">
+    <div class="container">
+        <div class="section-header slide-up">
+            <span class="badge">Career Path</span>
+            <h2>Professional <span class="gradient-text">Experience</span></h2>
+        </div>
+        
+        <!-- Experience Grid Cards Layout -->
+        <div class="experience-grid">
+            
+            <!-- Experience Card 1: Arch Technologies -->
+            <div class="experience-card slide-up">
+                <div class="exp-header">
+                    <span class="experience-date">2 Months</span>
+                    <span class="exp-type">Remote</span>
+                </div>
+                <h4>Web Developer Intern</h4>
+                <h5>Arch Technologies</h5>
+                <p>Collaborated with the development team to build responsive UI components, optimize web performance, and implement modern frontend features.</p>
+                
+                <!-- Offer Letter Preview -->
+                <div class="offer-letter-preview">
+                    <a href="Arch-Technologies-offer letter.jpg" target="_blank" class="offer-link">
+                        <img src="Arch-Technologies-offer letter.jpg" alt="Arch Technologies Offer Letter">
+                        <span class="offer-text">📄 View Offer Letter</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Experience Card 2: DevSphere -->
+            <div class="experience-card slide-up">
+                <div class="exp-header">
+                    <span class="experience-date">2 Months</span>
+                    <span class="exp-type">Remote</span>
+                </div>
+                <h4>Frontend Developer Intern</h4>
+                <h5>DevSphere</h5>
+                <p>Worked remotely to develop and test client-server architectures, integrate RESTful APIs, and enhance application workflows.</p>
+                
+                <!-- Offer Letter Preview -->
+                <div class="offer-letter-preview">
+                    <a href="DevSphere-offer-letter.jpg" target="_blank" class="offer-link">
+                        <img src="DevSphere-offer-letter.jpg" alt="DevSphere Offer Letter">
+                        <span class="offer-text">📄 View Offer Letter</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <div class="section-header slide-up">
+                <span class="badge">PROJECTS</span>
+                <h2>Things  I've <span class="gradient-text"> Built </span></h2>
+            </div>
+            <div class="projects-grid" id="projectsGrid">
+              
+      <!-- Initial 3 Projects -->
+    <div class="project-card slide-up">
+    <div class="project-img-wrapper">
+        <img src="AI-generator-Ideas.jpg" alt="AI Idea Generator">
+    </div>
+    <div class="project-info">
+        <h3>AI Idea Generator</h3>
+        <p>A smart web application that transforms user thoughts and categories into creative projects, business concepts, stories, and recipes using the power of AI.</p>
+        <div class="project-tags">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+            <span>Google Gemini API</span>
+        </div>
+        <div class="project-links">
+            <a href="https:ai-idea-generator-app.netlify.app" target="_blank" class="btn-primary-sm">View Live</a>
+        </div>
+    </div>
+</div>
+
+                <div class="project-card gradient-border-card fade-in-up">
+                    <div class="project-img-wrapper">
+                        <img src="feedback-image.jpg" alt="Feedback Wall" loading="lazy">
+                    </div>
+                    <div class="project-info">
+                        <h3>Feedback Wall</h3>
+                        <p>An interactive review portal backed by Supabase for real-time customer testimonials and feedback ratings.</p>
+                        <div class="tech-badges">
+                            <span>JavaScript</span>
+                            <span>Supabase</span>
+                            <span>CSS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://sanawebdeveloper098-dev.github.io/feedback-wall/" class="btn btn-sm btn-outline" target="_blank" rel="noopener">View Live</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card gradient-border-card fade-in-up">
+                    <div class="project-img-wrapper">
+                        <img src="weather-dashboard.jpg" alt="Weather Dashboard" loading="lazy">
+                    </div>
+                    <div class="project-info">
+                        <h3>Weather Dashboard</h3>
+                        <p>A meteorological application fetching live API forecasts with dynamic background states based on weather conditions.</p>
+                        <div class="tech-badges">
+                            <span>API</span>
+                            <span>JavaScript</span>
+                            <span>Responsive</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://sanawebdeveloper098-dev.github.io/weather-dashboard/" class="btn btn-sm btn-outline" target="_blank" rel="noopener">View Live</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hidden Projects (Revealed on click) -->
+
+                <div class="project-card gradient-border-card hidden-project">
+                    <div class="project-img-wrapper">
+                        <img src="to-do-image.jpg" alt="To-Do List App" loading="lazy">
+                    </div>
+                    <div class="project-info">
+                        <h3>To-Do List App</h3>
+                        <p>A feature-rich task manager supporting local persistence, filtering, priority flags, and smooth animations.</p>
+                        <div class="tech-badges">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://sanawebdeveloper098-dev.github.io/to-do-list-app/" class="btn btn-sm btn-outline" target="_blank" rel="noopener">View Live</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card gradient-border-card hidden-project">
+                    <div class="project-img-wrapper">
+                        <img src="quiz-image.jpg" alt="Quiz App" loading="lazy">
+                    </div>
+                    <div class="project-info">
+                        <h3>Quiz App</h3>
+                        <p>A dynamic timed assessment quiz platform providing instant scoring metrics and detailed category selections.</p>
+                        <div class="tech-badges">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://sanawebdeveloper098-dev.github.io/quiz-challenge/" class="btn btn-sm btn-outline" target="_blank" rel="noopener">View Live</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card gradient-border-card hidden-project">
+                    <div class="project-img-wrapper">
+                        <img src="coffee-image.jpg" alt="Coffee Website" loading="lazy">
+                    </div>
+                    <div class="project-info">
+                        <h3>Coffee Website</h3>
+                        <p>An elegant storefront and promotional landing page for an artisanal coffee roaster with interactive menu tabs.</p>
+                        <div class="tech-badges">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>Responsive</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://sanawebdeveloper098-dev.github.io/coffee-website/" class="btn btn-sm btn-outline" target="_blank" rel="noopener">View Live</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="projects-action">
+                <button id="showAllProjectsBtn" class="btn btn-outline ripple">Show All Projects &rarr;</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="section achievements-section">
+        <div class="container">
+            <div class="section-header slide-up">
+                <span class="badge">Milestones & Honors</span>
+                <h2>My <span class="gradient-text">Achievements</span></h2>
+            </div>
+            <div class="achievements-grid">
+                <div class="achievement-card gradient-border-card slide-left">
+                    <div class="achievement-img-wrapper">
+                        <img src="Full-Stack-Web-Development.jpeg" alt="Certificate 1" loading="lazy">
+                    </div>
+                    <div class="achievement-info">
+                        <span class="achievement-tag">Excellence Award</span>
+                        <h3>Best Student of the Month</h3>
+                        <h4>Full Stack Web Development</h4>
+                        <p>Awarded for exceptional code quality, architectural dedication, and collaborative project support.</p>
+                    </div>
+                </div>
+                <div class="achievement-card gradient-border-card slide-right">
+                    <div class="achievement-img-wrapper">
+                        <img src="AI-First Web Development.jpeg" alt="Certificate 2" loading="lazy">
+                    </div>
+                    <div class="achievement-info">
+                        <span class="achievement-tag">Innovation Award</span>
+                        <h3>Best Student of the Month</h3>
+                        <h4>AI-First Web Development</h4>
+                        <p>Recognized for pioneering the swift adaptation of advanced AI programming tools and effective execution.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="section-header slide-up">
+                <span class="badge">CONTACT</span>
+                <h2>Let's Work <span class="gradient-text">Together</span></h2>
+                <p class="section-subtitle">Have a project in mind or looking for a reliable web developer? I'd love to hear from you.</p>
+            </div>
+            
+            <div class="contact-grid">
+                <!-- Left Column (Contact Details & Socials) -->
+                <div class="contact-info-side slide-left">
+                    <div class="contact-info-group">
+                        <div class="contact-detail-item">
+                            <div class="contact-icon-box">📍</div>
+                            <div class="contact-detail-text">
+                                <span class="detail-label">LOCATION</span>
+                                <span class="detail-val">Lahore,Pakistan</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-detail-item">
+                            <div class="contact-icon-box">✉️</div>
+                            <div class="contact-detail-text">
+                                <span class="detail-label">EMAIL</span>
+                                <span class="detail-val">sanawebdeveloper098@gmail.com</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-find-box">
+                        <span class="find-me-title">FIND ME ON</span>
+                        <div class="contact-social-icons">
+                            <a href="https://github.com/sanawebdeveloper098-dev" target="_blank" rel="noopener" aria-label="GitHub">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            </a>
+                            <a href="https://www.linkedin.com/in/sana-muhammad-arshad-19b357411" target="_blank" rel="noopener" aria-label="LinkedIn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                            </a>
+                                      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sanawebdeveloper098@gmail.com" target="_blank" rel="noopener" aria-label="Email">
+    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column (Contact Form Card) -->
+                <div class="contact-form-side slide-right">
+                    <div class="contact-form-card gradient-border-card">
+                        <form id="contactForm" class="pro-contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="senderName">Your Name</label>
+                                    <input type="text" id="senderName" placeholder="Sana Arshad" required class="pro-input">
+                                </div>
+                                <div class="form-group">
+                                    <label for="senderEmail">Email Address</label>
+                                    <input type="email" id="senderEmail" placeholder="you@example.com" required class="pro-input">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="senderSubject">Subject</label>
+                                <input type="text" id="senderSubject" placeholder="Project enquiry / Collaboration / General" required class="pro-input">
+                            </div>
+                            <div class="form-group">
+                                <label for="senderMessage">Message</label>
+                                <textarea id="senderMessage" rows="5" placeholder="Tell me about your project or what you'd like to discuss..." required class="pro-input"></textarea>
+                            </div>
+                            <button type="submit" class="btn-yellow-glow ripple">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Footer Section -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Column 1: Brand & Bio -->
+                <div class="footer-col footer-brand-col">
+                    <h3 class="footer-logo">Sana <span class="gradient-text">Arshad</span></h3>
+                    <p class="footer-bio">
+                        Crafting scalable, elegant, and efficient web solutions — one line of code at a time. Open to freelance, remote, and full-time opportunities.
+                    </p>
+                </div>
+
+                <!-- Column 2: Navigation Links -->
+                <div class="footer-col footer-nav-col">
+                    <h4 class="footer-heading">NAVIGATION</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Connect & Hire Me Button -->
+                <div class="footer-col footer-connect-col">
+                    <h4 class="footer-heading">CONNECT</h4>
+                    <div class="footer-social-icons">
+                        <a href="https://github.com/sanawebdeveloper098-dev" target="_blank" rel="noopener" aria-label="GitHub">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/sana-muhammad-arshad-19b357411" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        </a>
+                       
+                    </div>
+                    <a href="#contact" class="footer-hire-btn">Hire me</a>
+                </div>
+            </div>
+
+            <!-- Bottom Copyright Bar -->
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sana Arshad. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTopBtn" aria-label="Scroll to top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
