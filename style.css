@@ -22,7 +22,7 @@
     --accent-gradient: linear-gradient(135deg, #1447b5 0%, #6a35c5 100%);
     --accent-color: #2563EB;
     --border-color: rgba(0, 0, 0, 0.1);
-    --card-bg: #ece4e4;
+    --card-bg: #f5f0f0;
     --nav-bg: rgba(248, 250, 252, 0.75);
     --shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.08);
 }
